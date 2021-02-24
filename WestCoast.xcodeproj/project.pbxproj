@@ -9,23 +9,41 @@
 /* Begin PBXBuildFile section */
 		FA6DC19925E536F000640A63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DC19825E536F000640A63 /* AppDelegate.swift */; };
 		FA6DC19B25E536F000640A63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DC19A25E536F000640A63 /* SceneDelegate.swift */; };
-		FA6DC19D25E536F000640A63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DC19C25E536F000640A63 /* ViewController.swift */; };
 		FA6DC1A025E536F000640A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6DC19E25E536F000640A63 /* Main.storyboard */; };
 		FA6DC1A325E536F000640A63 /* WestCoast.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA6DC1A125E536F000640A63 /* WestCoast.xcdatamodeld */; };
 		FA6DC1A525E536F200640A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6DC1A425E536F200640A63 /* Assets.xcassets */; };
 		FA6DC1A825E536F200640A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6DC1A625E536F200640A63 /* LaunchScreen.storyboard */; };
+		FA6DC1B425E5380700640A63 /* HomeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DC1B325E5380700640A63 /* HomeTableVC.swift */; };
+		FA89C3C925E54DE400E29777 /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3C825E54DE400E29777 /* ProfileTableVC.swift */; };
+		FA89C3CC25E54DFD00E29777 /* CourseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3CB25E54DFD00E29777 /* CourseTableVC.swift */; };
+		FA89C3CF25E54E1400E29777 /* ContactTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3CE25E54E1400E29777 /* ContactTableVC.swift */; };
+		FA89C3D925E5752D00E29777 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3D725E5752D00E29777 /* TextFieldTableViewCell.swift */; };
+		FA89C3DA25E5752D00E29777 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA89C3D825E5752D00E29777 /* TextFieldTableViewCell.xib */; };
+		FA89C3DD25E586E200E29777 /* SingUpTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3DC25E586E200E29777 /* SingUpTableVC.swift */; };
+		FA89C3E025E586FC00E29777 /* LoginTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3DF25E586FC00E29777 /* LoginTableVC.swift */; };
+		FA89C3E325E5871800E29777 /* ShowProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3E225E5871800E29777 /* ShowProfileTableVC.swift */; };
+		FA89C3E625E5C19200E29777 /* ShowCourseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3E525E5C19200E29777 /* ShowCourseTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA6DC19525E536F000640A63 /* WestCoast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WestCoast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA6DC19825E536F000640A63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA6DC19A25E536F000640A63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA6DC19C25E536F000640A63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA6DC19F25E536F000640A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA6DC1A225E536F000640A63 /* WestCoast.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WestCoast.xcdatamodel; sourceTree = "<group>"; };
 		FA6DC1A425E536F200640A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA6DC1A725E536F200640A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA6DC1A925E536F200640A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA6DC1B325E5380700640A63 /* HomeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableVC.swift; sourceTree = "<group>"; };
+		FA89C3C825E54DE400E29777 /* ProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableVC.swift; sourceTree = "<group>"; };
+		FA89C3CB25E54DFD00E29777 /* CourseTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableVC.swift; sourceTree = "<group>"; };
+		FA89C3CE25E54E1400E29777 /* ContactTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableVC.swift; sourceTree = "<group>"; };
+		FA89C3D725E5752D00E29777 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		FA89C3D825E5752D00E29777 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		FA89C3DC25E586E200E29777 /* SingUpTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpTableVC.swift; sourceTree = "<group>"; };
+		FA89C3DF25E586FC00E29777 /* LoginTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableVC.swift; sourceTree = "<group>"; };
+		FA89C3E225E5871800E29777 /* ShowProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowProfileTableVC.swift; sourceTree = "<group>"; };
+		FA89C3E525E5C19200E29777 /* ShowCourseTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCourseTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +76,49 @@
 		FA6DC19725E536F000640A63 /* WestCoast */ = {
 			isa = PBXGroup;
 			children = (
+				FA89C3D625E5750400E29777 /* CustomCell */,
 				FA6DC19825E536F000640A63 /* AppDelegate.swift */,
 				FA6DC19A25E536F000640A63 /* SceneDelegate.swift */,
-				FA6DC19C25E536F000640A63 /* ViewController.swift */,
-				FA6DC19E25E536F000640A63 /* Main.storyboard */,
+				FA6DC1B625E5380C00640A63 /* Controller */,
+				FA6DC1B125E5376F00640A63 /* View */,
 				FA6DC1A425E536F200640A63 /* Assets.xcassets */,
-				FA6DC1A625E536F200640A63 /* LaunchScreen.storyboard */,
 				FA6DC1A925E536F200640A63 /* Info.plist */,
 				FA6DC1A125E536F000640A63 /* WestCoast.xcdatamodeld */,
 			);
 			path = WestCoast;
+			sourceTree = "<group>";
+		};
+		FA6DC1B125E5376F00640A63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA6DC1A625E536F200640A63 /* LaunchScreen.storyboard */,
+				FA6DC19E25E536F000640A63 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA6DC1B625E5380C00640A63 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA6DC1B325E5380700640A63 /* HomeTableVC.swift */,
+				FA89C3C825E54DE400E29777 /* ProfileTableVC.swift */,
+				FA89C3CB25E54DFD00E29777 /* CourseTableVC.swift */,
+				FA89C3CE25E54E1400E29777 /* ContactTableVC.swift */,
+				FA89C3DC25E586E200E29777 /* SingUpTableVC.swift */,
+				FA89C3DF25E586FC00E29777 /* LoginTableVC.swift */,
+				FA89C3E225E5871800E29777 /* ShowProfileTableVC.swift */,
+				FA89C3E525E5C19200E29777 /* ShowCourseTableVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA89C3D625E5750400E29777 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				FA89C3D725E5752D00E29777 /* TextFieldTableViewCell.swift */,
+				FA89C3D825E5752D00E29777 /* TextFieldTableViewCell.xib */,
+			);
+			path = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +181,7 @@
 				FA6DC1A825E536F200640A63 /* LaunchScreen.storyboard in Resources */,
 				FA6DC1A525E536F200640A63 /* Assets.xcassets in Resources */,
 				FA6DC1A025E536F000640A63 /* Main.storyboard in Resources */,
+				FA89C3DA25E5752D00E29777 /* TextFieldTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,10 +192,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA6DC19D25E536F000640A63 /* ViewController.swift in Sources */,
+				FA89C3CC25E54DFD00E29777 /* CourseTableVC.swift in Sources */,
+				FA89C3E625E5C19200E29777 /* ShowCourseTableVC.swift in Sources */,
+				FA89C3E025E586FC00E29777 /* LoginTableVC.swift in Sources */,
 				FA6DC19925E536F000640A63 /* AppDelegate.swift in Sources */,
+				FA89C3C925E54DE400E29777 /* ProfileTableVC.swift in Sources */,
+				FA89C3D925E5752D00E29777 /* TextFieldTableViewCell.swift in Sources */,
 				FA6DC19B25E536F000640A63 /* SceneDelegate.swift in Sources */,
 				FA6DC1A325E536F000640A63 /* WestCoast.xcdatamodeld in Sources */,
+				FA6DC1B425E5380700640A63 /* HomeTableVC.swift in Sources */,
+				FA89C3E325E5871800E29777 /* ShowProfileTableVC.swift in Sources */,
+				FA89C3DD25E586E200E29777 /* SingUpTableVC.swift in Sources */,
+				FA89C3CF25E54E1400E29777 /* ContactTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
