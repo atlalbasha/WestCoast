@@ -14,7 +14,6 @@
 		FA6DC1A525E536F200640A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6DC1A425E536F200640A63 /* Assets.xcassets */; };
 		FA6DC1A825E536F200640A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6DC1A625E536F200640A63 /* LaunchScreen.storyboard */; };
 		FA6DC1B425E5380700640A63 /* HomeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DC1B325E5380700640A63 /* HomeTableVC.swift */; };
-		FA89C3C925E54DE400E29777 /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3C825E54DE400E29777 /* ProfileTableVC.swift */; };
 		FA89C3CC25E54DFD00E29777 /* CourseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3CB25E54DFD00E29777 /* CourseTableVC.swift */; };
 		FA89C3CF25E54E1400E29777 /* ContactTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3CE25E54E1400E29777 /* ContactTableVC.swift */; };
 		FA89C3D925E5752D00E29777 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3D725E5752D00E29777 /* TextFieldTableViewCell.swift */; };
@@ -23,6 +22,7 @@
 		FA89C3E025E586FC00E29777 /* LoginTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3DF25E586FC00E29777 /* LoginTableVC.swift */; };
 		FA89C3E325E5871800E29777 /* ShowProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3E225E5871800E29777 /* ShowProfileTableVC.swift */; };
 		FA89C3E625E5C19200E29777 /* ShowCourseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3E525E5C19200E29777 /* ShowCourseTableVC.swift */; };
+		FA89C3FB25E7E56400E29777 /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3FA25E7E56400E29777 /* ProfileTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,6 @@
 		FA6DC1A725E536F200640A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA6DC1A925E536F200640A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA6DC1B325E5380700640A63 /* HomeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableVC.swift; sourceTree = "<group>"; };
-		FA89C3C825E54DE400E29777 /* ProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableVC.swift; sourceTree = "<group>"; };
 		FA89C3CB25E54DFD00E29777 /* CourseTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableVC.swift; sourceTree = "<group>"; };
 		FA89C3CE25E54E1400E29777 /* ContactTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableVC.swift; sourceTree = "<group>"; };
 		FA89C3D725E5752D00E29777 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		FA89C3DF25E586FC00E29777 /* LoginTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableVC.swift; sourceTree = "<group>"; };
 		FA89C3E225E5871800E29777 /* ShowProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowProfileTableVC.swift; sourceTree = "<group>"; };
 		FA89C3E525E5C19200E29777 /* ShowCourseTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCourseTableVC.swift; sourceTree = "<group>"; };
+		FA89C3FA25E7E56400E29777 /* ProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +101,13 @@
 			isa = PBXGroup;
 			children = (
 				FA6DC1B325E5380700640A63 /* HomeTableVC.swift */,
-				FA89C3C825E54DE400E29777 /* ProfileTableVC.swift */,
 				FA89C3CB25E54DFD00E29777 /* CourseTableVC.swift */,
 				FA89C3CE25E54E1400E29777 /* ContactTableVC.swift */,
 				FA89C3DC25E586E200E29777 /* SingUpTableVC.swift */,
 				FA89C3DF25E586FC00E29777 /* LoginTableVC.swift */,
 				FA89C3E225E5871800E29777 /* ShowProfileTableVC.swift */,
 				FA89C3E525E5C19200E29777 /* ShowCourseTableVC.swift */,
+				FA89C3FA25E7E56400E29777 /* ProfileTableVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,10 +193,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA89C3CC25E54DFD00E29777 /* CourseTableVC.swift in Sources */,
+				FA89C3FB25E7E56400E29777 /* ProfileTableVC.swift in Sources */,
 				FA89C3E625E5C19200E29777 /* ShowCourseTableVC.swift in Sources */,
 				FA89C3E025E586FC00E29777 /* LoginTableVC.swift in Sources */,
 				FA6DC19925E536F000640A63 /* AppDelegate.swift in Sources */,
-				FA89C3C925E54DE400E29777 /* ProfileTableVC.swift in Sources */,
 				FA89C3D925E5752D00E29777 /* TextFieldTableViewCell.swift in Sources */,
 				FA6DC19B25E536F000640A63 /* SceneDelegate.swift in Sources */,
 				FA6DC1A325E536F000640A63 /* WestCoast.xcdatamodeld in Sources */,
