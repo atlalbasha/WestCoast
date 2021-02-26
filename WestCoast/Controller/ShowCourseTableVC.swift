@@ -6,19 +6,26 @@
 //
 
 import UIKit
+import CoreData
 
 class ShowCourseTableVC: UITableViewController {
     
-    var selectedCourse: String = ""
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var myCourse = [Courses]()
+    var myUser = User()
+    
+    var selectedCourse = coursesCategory() {
+        didSet{
+//            print(selectedCourse.courseName)
+        }
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
+    
     }
 
     // MARK: - Table view data source
@@ -39,17 +46,15 @@ class ShowCourseTableVC: UITableViewController {
 
         // Configure the cell...
         if indexPath.section == 0 {
-            cell.textLabel?.text = selectedCourse
+            cell.textLabel?.text = selectedCourse.courseName
             cell.textLabel?.textAlignment = .left
             cell.imageView?.image = UIImage(systemName: "books.vertical.fill")
             cell.selectionStyle = .none
             cell.textLabel?.textColor = UIColor(named: "WestTextColor")
             cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 22.0)
+            cell.textLabel?.numberOfLines = 0
         }else if indexPath.section == 1{
-            cell.textLabel?.text = """
-In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system.[3] Berners-Lee specified HTML and wrote the browser and server software in late 1990. That year, Berners-Lee and CERN data systems engineer Robert Cailliau collaborated on a joint request for funding, but the project was not formally adopted by CERN. In his personal notes[4] from 1990 he listed[5] "some of the many areas in which hypertext is used" and put an encyclopedia first.
-"""
-            
+            cell.textLabel?.text = selectedCourse.courseDescribe
             cell.textLabel?.textAlignment = .left
             cell.textLabel?.textColor = UIColor(named: "WestTextColor")
             cell.backgroundColor = UIColor(named: "WestBackGroundColor")
@@ -78,7 +83,25 @@ In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototype
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.section == 3 {
             dismiss(animated: true, completion: nil)
+        }else if indexPath.section == 2 {
+            saveCourse()
+            dismiss(animated: true, completion: nil)
         }
+    }
+    
+    func saveCourse() {
+        let newCourse = Courses(context: context)
+        newCourse.courseName = selectedCourse.courseName
+        newCourse.courseDescription = selectedCourse.courseDescribe
+//        myUser.addToUserCourses(newCourse)
+        
+        myCourse.append(newCourse)
+        do {
+            try context.save()
+        }catch{
+            print("Error \(error)")
+        }
+        
     }
 
 }

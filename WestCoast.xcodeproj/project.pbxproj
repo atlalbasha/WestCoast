@@ -23,6 +23,12 @@
 		FA89C3E325E5871800E29777 /* ShowProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3E225E5871800E29777 /* ShowProfileTableVC.swift */; };
 		FA89C3E625E5C19200E29777 /* ShowCourseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3E525E5C19200E29777 /* ShowCourseTableVC.swift */; };
 		FA89C3FB25E7E56400E29777 /* ProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C3FA25E7E56400E29777 /* ProfileTableVC.swift */; };
+		FA89C41C25E91C1900E29777 /* Courses+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C41825E91C1900E29777 /* Courses+CoreDataClass.swift */; };
+		FA89C41D25E91C1900E29777 /* Courses+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C41925E91C1900E29777 /* Courses+CoreDataProperties.swift */; };
+		FA89C41E25E91C1900E29777 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C41A25E91C1900E29777 /* User+CoreDataClass.swift */; };
+		FA89C41F25E91C1900E29777 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C41B25E91C1900E29777 /* User+CoreDataProperties.swift */; };
+		FA89C42225E91D4B00E29777 /* CoursesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C42125E91D4B00E29777 /* CoursesModel.swift */; };
+		FA89C42525E95B1500E29777 /* CoursesBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA89C42425E95B1500E29777 /* CoursesBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,12 @@
 		FA89C3E225E5871800E29777 /* ShowProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowProfileTableVC.swift; sourceTree = "<group>"; };
 		FA89C3E525E5C19200E29777 /* ShowCourseTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCourseTableVC.swift; sourceTree = "<group>"; };
 		FA89C3FA25E7E56400E29777 /* ProfileTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableVC.swift; sourceTree = "<group>"; };
+		FA89C41825E91C1900E29777 /* Courses+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Courses+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA89C41925E91C1900E29777 /* Courses+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Courses+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA89C41A25E91C1900E29777 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA89C41B25E91C1900E29777 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FA89C42125E91D4B00E29777 /* CoursesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesModel.swift; sourceTree = "<group>"; };
+		FA89C42425E95B1500E29777 /* CoursesBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,7 @@
 		FA6DC19725E536F000640A63 /* WestCoast */ = {
 			isa = PBXGroup;
 			children = (
+				FA89C41725E9198400E29777 /* CoreDataModel */,
 				FA89C3D625E5750400E29777 /* CustomCell */,
 				FA6DC19825E536F000640A63 /* AppDelegate.swift */,
 				FA6DC19A25E536F000640A63 /* SceneDelegate.swift */,
@@ -83,7 +96,6 @@
 				FA6DC1B125E5376F00640A63 /* View */,
 				FA6DC1A425E536F200640A63 /* Assets.xcassets */,
 				FA6DC1A925E536F200640A63 /* Info.plist */,
-				FA6DC1A125E536F000640A63 /* WestCoast.xcdatamodeld */,
 			);
 			path = WestCoast;
 			sourceTree = "<group>";
@@ -119,6 +131,20 @@
 				FA89C3D825E5752D00E29777 /* TextFieldTableViewCell.xib */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		FA89C41725E9198400E29777 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA89C41825E91C1900E29777 /* Courses+CoreDataClass.swift */,
+				FA89C41925E91C1900E29777 /* Courses+CoreDataProperties.swift */,
+				FA89C41A25E91C1900E29777 /* User+CoreDataClass.swift */,
+				FA89C41B25E91C1900E29777 /* User+CoreDataProperties.swift */,
+				FA6DC1A125E536F000640A63 /* WestCoast.xcdatamodeld */,
+				FA89C42125E91D4B00E29777 /* CoursesModel.swift */,
+				FA89C42425E95B1500E29777 /* CoursesBrain.swift */,
+			);
+			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,16 +220,22 @@
 			files = (
 				FA89C3CC25E54DFD00E29777 /* CourseTableVC.swift in Sources */,
 				FA89C3FB25E7E56400E29777 /* ProfileTableVC.swift in Sources */,
+				FA89C41F25E91C1900E29777 /* User+CoreDataProperties.swift in Sources */,
 				FA89C3E625E5C19200E29777 /* ShowCourseTableVC.swift in Sources */,
 				FA89C3E025E586FC00E29777 /* LoginTableVC.swift in Sources */,
 				FA6DC19925E536F000640A63 /* AppDelegate.swift in Sources */,
 				FA89C3D925E5752D00E29777 /* TextFieldTableViewCell.swift in Sources */,
 				FA6DC19B25E536F000640A63 /* SceneDelegate.swift in Sources */,
+				FA89C41C25E91C1900E29777 /* Courses+CoreDataClass.swift in Sources */,
 				FA6DC1A325E536F000640A63 /* WestCoast.xcdatamodeld in Sources */,
 				FA6DC1B425E5380700640A63 /* HomeTableVC.swift in Sources */,
+				FA89C41D25E91C1900E29777 /* Courses+CoreDataProperties.swift in Sources */,
 				FA89C3E325E5871800E29777 /* ShowProfileTableVC.swift in Sources */,
 				FA89C3DD25E586E200E29777 /* SingUpTableVC.swift in Sources */,
 				FA89C3CF25E54E1400E29777 /* ContactTableVC.swift in Sources */,
+				FA89C42525E95B1500E29777 /* CoursesBrain.swift in Sources */,
+				FA89C41E25E91C1900E29777 /* User+CoreDataClass.swift in Sources */,
+				FA89C42225E91D4B00E29777 /* CoursesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
