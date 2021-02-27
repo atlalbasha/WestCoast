@@ -14,14 +14,10 @@ class ContactTableVC: UITableViewController {
         
         // register custom cell
         tableView.register(TextFieldTableViewCell.nib(), forCellReuseIdentifier: TextFieldTableViewCell.identifier)
-        
-        
+      
     }
     
     
-    
-   
-
 
     // MARK: - Table view data source
 
@@ -32,10 +28,7 @@ class ContactTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        
             return 1
-        
-       
     }
 
     

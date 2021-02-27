@@ -15,10 +15,17 @@ class ProfileTableVC: UITableViewController, UITextFieldDelegate {
         // register custom cell
         tableView.register(TextFieldTableViewCell.nib(), forCellReuseIdentifier: TextFieldTableViewCell.identifier)
         
-        navigationController?.isNavigationBarHidden = false
+        
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        navigationController?.isNavigationBarHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        navigationController?.isNavigationBarHidden = false
+    }
     
    
 
@@ -32,15 +39,18 @@ class ProfileTableVC: UITableViewController, UITextFieldDelegate {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        
-            return 1
-        
-       
+        return 1
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath)
+        
+        // prepare cell to reuse
+        cell.textLabel?.text = nil
+        cell.imageView?.image = nil
+        cell.textLabel?.textColor = nil
+        cell.textLabel?.font = nil
         
         // Configure the cell...
         if indexPath.section == 0 {
@@ -95,14 +105,14 @@ class ProfileTableVC: UITableViewController, UITextFieldDelegate {
         }
         
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SingSegue"{
-            let VC = segue.destination as! SingUpTableVC
-        }else if segue.identifier == "LoginSegue"{
-            let VC = segue.destination as! LoginTableVC
-        }
-    }
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "SingSegue"{
+//            let VC = segue.destination as! SingUpTableVC
+//        }else if segue.identifier == "LoginSegue"{
+//            let VC = segue.destination as! LoginTableVC
+//        }
+//    }
+//    
   
 
 }

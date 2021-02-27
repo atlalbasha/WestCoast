@@ -91,10 +91,10 @@ class ShowProfileTableVC: UITableViewController {
         courses.remove(at: indexPath.row )
         tableView.reloadData()
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "addSegue" {
-            let VC = segue.destination as! CourseTableVC
-        }
-    }
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "addSegue" {
+//            let VC = segue.destination as! CourseTableVC
+//        }
+//    }
+//    
 }

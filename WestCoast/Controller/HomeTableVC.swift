@@ -13,7 +13,7 @@ class HomeTableVC: UITableViewController {
         super.viewDidLoad()
 
     }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -29,6 +29,8 @@ class HomeTableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CourseCell", for: indexPath)
+        
+       
 
         // Configure the cell...
         if indexPath.section == 0 {
@@ -45,7 +47,7 @@ class HomeTableVC: UITableViewController {
             cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 22.0)
         }else if indexPath.section == 2 {
             cell.textLabel?.text = """
-                WestCoast Education är ett utbildningsföretag som har sin placering på västkusten strax norr om Göteborg. Vi har varit i utbildningsbranschen i snart 40 år. Vårt affärsmål är och har varit att tillhandahålla tekniska utbildningar inom IT-området. Vi har varit väldigt framgångsrika i alla år. Vi har specialiserat oss på framförallt systemutvecklingsutbildningar inom webb och mobila lösningar.
+                WestCoast Education is an education company located on the west coast just north of Gothenburg. We have been in the education industry for almost 40 years. Our business goal is and has been to provide technical training in the IT area. We have been very successful all these years. We specialise primarily in system development training in web and mobile solutions.
                 """
             cell.textLabel?.textAlignment = .center
             cell.selectionStyle = .none
@@ -66,10 +68,6 @@ class HomeTableVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        tableView.deselectRow(at: indexPath, animated: true)
     }
-   
-   
-    
-
-
+  
 }
 
